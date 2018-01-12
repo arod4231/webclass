@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<link rel="stylesheet"  href="styles.css">
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 450px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column" style="background-color: yellow;">
+    <img src="cheeseburger.jpg" width="375" border="20">
+    <p>Cheeseburger Combo,1 meat, 1 cheese: $5.95</p>
+       
+  </div>
+  <div class="column" style="background-color: yellow;">
+    <img src="doubledouble.jpg" width="420" border="20">
+    <p>Double Double Combo, 2 meat, 2 cheese: $7.95
+    </p>
+   
+
+  </div>
+  <div class="column" style="background-color: yellow;">
+    <img src="threebythree.jpg" width="375" height="275" border="20">
+    <p>Triple Triple Combo, 3 meat, 3 cheese: 9.95</p>
+    
+   
+  </div>
+</div>
+    <a href="restaurant.html"><center><img src="menu.jpg" height="100" width="150"></center>Home!</a>
+    <a href="aboutus.html"><center><img src="employee.jpg" height="100" width="150"></center>About us!</a>
+    <a href="map.html"><center><img src="map.jpg" height="100" width="150"></center>Map!</a>
