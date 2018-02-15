@@ -1,40 +1,59 @@
 <!DOCTYPE html>
+<link rel="stylesheet"  href="styles.css">
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet"  href="styles.css" type="text/css">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; 
+  }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+
+
+
+
+</style>
 </head>
 <body>
-
-<div class="row">
-  <div class="col-4 col-m-6" style="background-color: yellow;">
-    <img src="images/cheeseburger.jpg"  border="20">
-    <p>Cheeseburger Combo,1 meat, 1 cheese: $5.95</p>
+ <div class="row">
+  <div class="column">
+    <img src="images/cheeseburger.jpg" width="375" height="200" border="20" style="width: 100%" style="height: 100%" >
+    <p>Cheeseburger Combo, 1 meat, 1 cheese: $5.95</p>
        
   </div>
-  <div class="col-4 col-m-6" style="background-color: yellow;">
-    <img src="images/doubledouble.jpg" border="20" height="200">
+  <div class="row">
+  <div class="column">
+    <img src="images/doubledouble.jpg" width="200" height="200" border="20" style="width: 100%" style="height: 100%">
     <p>Double Double Combo, 2 meat, 2 cheese: $7.95
     </p>
+   
+
   </div>
-  <div class="col-4 col-m-6" style="background-color: yellow;">
-    <img src="images/threebythree.jpg" border="20">
-    <p>Triple Triple Combo, 3 meat, 3 cheese: 9.95</p>
-  </div>
- 
   <div class="row">
-  <div class="col-4 col-m-6" style="background-color: yellow;">
-  	<img src="images/vanilla.jpg" border="20" width=375>
-  	<p> Delicious Vanilla Milkshake, made with real vanilla ice cream! 2.10
+  <div class="column">
+    <img src="images/threebythree.jpg" width="375" height="200" border="20" style="width: 100%" style="height: 100%">
+    <p>Triple Triple Combo, 3 meat, 3 cheese: 9.95</p>
+   
   </div>
-  	<div class="col-4 col-m-6" style="background-color: yellow;">
-  	<img src="images/chocolate.jpg" border="20" width="375" height="225"> 
-  	<p> Delicious Chocolate Milkshake, made with real chocolate ice cream! 2.10
-  </div>
-  	<div class="col-4 col-m-6" style="background-color: yellow;">
-  	<img src="images/strawberry.jpg" border="20" width ="375" height="225">
-  	<p> Delicious Strawberry Milkshake, made with real strawberry ice cream! 2.95
 </div>
-    <a href="restaurant.html"><center><img src="images/menu.jpg" height="100" width="150"></center>Home!</a>
-    <a href="aboutus.html"><center><img src="images/employee.jpg" height="100" width="150"></center>About us!</a>
-    <a href="map.html"><center><img src="images/map.jpg" height="100" width="150"></center>Map!</a>
+    <a href="restaurant.html"><img src="images/menu.jpg" height="100" width="150">Home!</a>
+    <a href="aboutus.html"><img src="images/employee.jpg" height="65" width="75">About us!</a>
+    <a href="map.html"><img src="images/map.jpg" height="100" width="150">Map!</a>

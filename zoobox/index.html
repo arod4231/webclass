@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<title>Home</title>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1">
+<img src="images/zoobox.png" width="200" >	
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<style>
+.mySlides {display:none;}
+
+
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+</style>
+
+<body>
+<div id="navbar">
+  <a class="active" href="index.html">Home</a>
+  <a href="boxes.html">Boxes</a>
+  <a href="aboutus.html">About us</a>
+  <a href="http://eepurl.com/dkTjcv">Mailing List</a>
+</div>
+<p><center>Zoo Box: Bid regular food adieu!</center></p>
+<div class="w3-content w3-section" style="max-width:600px">
+  <img class="mySlides w3-animate-left" src="images/bison.jpg" style="width:100%">
+  <img class="mySlides w3-animate-right" src="images/lizard.jpg" style="width:100%">
+  <img class="mySlides w3-animate-left" src="images/snake.jpg" style="width:100%">
+  <img class="mySlides w3-animate-right" src="images/ostritch.jpg" style="width:100%">
+  <img class="mySlides w3-animate-left" src="images/zebra.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
+</script>
+
